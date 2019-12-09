@@ -1,15 +1,12 @@
-class Anagram 
- attr_accessor :word
-ANAGREM = []
-def initialize(word)
-  @word = word
+class Anagram
+attr_accessor :word
+
+def initialize(word) 
+  @word = word 
 end
 
 def match(words_array) 
   matches = []
-  words_array.select do |word|
-    @word.split("").sort == word.split("").sort
-  end
+  words_array.select { |word| @word.split("").sort == word.split("").sort} 
 end
-
 end
