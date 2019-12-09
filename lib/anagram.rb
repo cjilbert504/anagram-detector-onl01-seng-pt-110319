@@ -7,7 +7,6 @@ end
 
 def match(words_array) 
   matches = []
-  words_array.select { |word| @word.split(" ").sort == word.split(" ").sort} 
-end
+  words_array.select { |word| @word.split("").sort == word.split("").sort} 
 
 end
