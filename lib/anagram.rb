@@ -8,3 +8,4 @@ class Anagram 
   def match(words_array) 
     matches = []
   end
+end
